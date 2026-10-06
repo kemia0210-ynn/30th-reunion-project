@@ -1,0 +1,195 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>人生PROJECT｜幼少期を共に歩んだあの頃から</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,"Noto Sans JP",sans-serif;color:#26323a;background:#f7f5f0;line-height:1.9}.hero{min-height:88vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:70px 20px;background:linear-gradient(135deg,#f4ede1,#e8eef0)}.hero-inner{max-width:900px}.eyebrow{letter-spacing:.2em;font-size:.78rem;color:#68757c}.hero h1{font-size:clamp(2.4rem,7vw,5.2rem);line-height:1.12;margin:20px 0}.hero h1 span{display:block;font-size:.38em;font-weight:500;letter-spacing:.13em;margin-top:22px}.lead{font-size:1.08rem;max-width:720px;margin:30px auto}.btn{display:inline-block;padding:13px 25px;border-radius:999px;background:#26323a;color:#fff;text-decoration:none;margin-top:12px}nav{position:sticky;top:0;background:#ffffffdf;backdrop-filter:blur(10px);padding:12px;text-align:center;z-index:5;border-bottom:1px solid #ddd}nav a{color:#26323a;text-decoration:none;margin:0 10px;font-size:.85rem}section{max-width:1050px;margin:auto;padding:85px 22px}h2{font-size:2rem;line-height:1.3;margin-bottom:8px}.sub{color:#6c777d}.quote{font-size:1.5rem;text-align:center;max-width:780px;margin:38px auto}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:30px}.card{background:#fff;padding:26px;border-radius:20px;box-shadow:0 5px 22px #0000000a}.big{font-size:2rem;font-weight:700}.timeline{border-left:2px solid #cbd4d8;padding-left:25px;margin-top:30px}.timeline div{margin:28px 0}.year{font-weight:700;font-size:1.15rem}.highlight{background:#26323a;color:#fff;border-radius:28px;padding:50px 30px;text-align:center}.highlight p{max-width:760px;margin:15px auto}footer{text-align:center;padding:55px 20px;background:#26323a;color:#fff}.small{font-size:.86rem;color:#737e84}
+
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px;margin-top:28px}.stat{background:#fff;padding:22px;border-radius:18px;box-shadow:0 5px 22px #0000000a}.stat .num{font-size:2rem;font-weight:700}.stat .label{font-size:.88rem;color:#6c777d}.mini{margin-top:20px;color:#6c777d;font-size:.85rem}.barlist{display:grid;gap:10px;margin-top:18px}.barrow{display:grid;grid-template-columns:90px 1fr 42px;gap:10px;align-items:center;font-size:.88rem}.bar{height:9px;background:#e9edef;border-radius:99px;overflow:hidden}.bar i{display:block;height:100%;background:#26323a;border-radius:99px}.data-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}.data-actions button{border:1px solid #cbd4d8;background:#fff;color:#26323a;border-radius:999px;padding:9px 16px;cursor:pointer}.data-actions button.primary{background:#26323a;color:#fff}.status-ok{color:#3d6b50}.status-warn{color:#8a6840}.hidden{display:none}
+</style></head><body>
+<div class="hero"><div class="hero-inner"><div class="eyebrow">JINSEI PROJECT</div><h1>もう一度、<br>あの人に会いに行こう。<span>人生PROJECT｜幼少期を共に歩んだあの頃から</span></h1><p class="lead">幼い頃、一緒に笑って、一緒に学んだ仲間たち。<br>それぞれの人生を歩み始めた今だからこそ、節目ごとにもう一度つながる。</p><a class="btn" href="#project">PROJECTを見る</a></div></div>
+<nav><a href="#project">PROJECT</a><a href="#now">みんなの今</a><a href="#29">29歳</a><a href="#30">30歳</a><a href="#future">これから</a></nav>
+<section id="project"><h2>人生PROJECTとは。</h2><p class="sub">一度きりの同窓会ではなく、人生の節目で再び集まれる場所を。</p><p>AIが進化し、人とのつながり方も変わっていく時代。だからこそ、実際に顔を合わせ、近況を知り、経験や考えを交換することには、これからも大きな意味があると思う。</p><p>このPROJECTは、30歳だけをゴールにしない。30歳、35歳、40歳、45歳……人生の節目に、また集まる。仕事、家族、暮らし、挑戦、悩み。お互いの「今」を知ることで、誰かの人生に新しいヒントが生まれるかもしれない。</p><p class="quote">「あの頃の仲間が、今どんな人生を歩んでいるのか。」<br>それを知ることから、次のつながりが始まる。</p></section>
+<section id="now"><h2>みんなの「今」を知る。</h2><p class="sub">アンケートの回答をもとに、現在地と参加しやすい条件を少しずつ可視化していきます。</p><div class="stats"><div class="stat"><div class="num" id="answerCount">—</div><div class="label">回答数</div></div><div class="stat"><div class="num" id="gunmaCount">—</div><div class="label">群馬開催に前向きな回答</div></div><div class="stat"><div class="num" id="childCount">—</div><div class="label">お子さんがいる回答</div></div><div class="stat"><div class="num" id="wantCount">—</div><div class="label">30歳同窓会に前向きな回答</div></div></div><div class="grid" style="margin-top:24px"><div class="card"><h3>現在地</h3><div id="prefectureBars" class="barlist"><div class="mini">アンケート回答後に表示されます。</div></div></div><div class="card"><h3>参加しやすい時間帯</h3><div id="timeBars" class="barlist"><div class="mini">アンケート回答後に表示されます。</div></div></div><div class="card"><h3>群馬開催について</h3><p id="gunmaSummary" class="mini">アンケート回答後に表示されます。</p><div class="data-actions"><button class="primary" onclick="loadSurveyData()">最新データを読み込む</button></div><p id="dataStatus" class="mini">Googleスプレッドシートと接続準備中…</p></div></div></section>
+<section id="29"><h2>29歳｜もう一度、つながる。</h2><p class="sub">30歳を迎える前に、小さくても一度集まってみる。</p><div class="highlight"><h3>「30歳を、いいスタートにするために。」</h3><p>30歳の本番をいきなり迎えるのではなく、まずは29歳で再コンタクト。久しぶりに顔を合わせ、今の自分を知り、30歳の節目にどんな会をしたいかをみんなで考える。</p></div><p>全員に同じ熱量を求めるのではなく、企画を進めたい人が中心となり、必要なときにそれぞれができることを手伝う。みんなで作るけれど、無理はしない。</p></section>
+<section id="30"><h2>30歳｜もう一度、あの人に会いに行こう。</h2><p class="sub">「久しぶりに会った」だけで終わらない、一日へ。</p><div class="timeline"><div><span class="year">01｜再会</span><br>昔の仲間と、もう一度顔を合わせる。</div><div><span class="year">02｜現在</span><br>30歳になった今、それぞれがどんな人生を歩んでいるのか知る。</div><div><span class="year">03｜交換</span><br>仕事、暮らし、挑戦、悩み。経験や考えを交換する。</div><div><span class="year">04｜これから</span><br>これからやりたいことを語り、次の人生へのヒントを持ち帰る。</div></div></section>
+<section id="future"><h2>そして、35歳。40歳。45歳。</h2><p class="sub">人生PROJECTは、30歳で終わらない。</p><div class="grid"><div class="card"><h3>30歳</h3><p>人生の新しいスタートをみんなで迎える。</p></div><div class="card"><h3>35歳</h3><p>仕事や家庭、人生の変化を共有する。</p></div><div class="card"><h3>40歳</h3><p>これまでの経験と、これからを語る。</p></div><div class="card"><h3>45歳 …</h3><p>節目ごとに、また「あの人」に会う。</p></div></div><p class="quote">同窓会は、過去を振り返るだけの場所ではない。<br><b>これからの人生を考える場所にもできる。</b></p></section>
+<section><h2>このサイトも、みんなで作っていく。</h2><p>昔の写真、30歳の今、これからやりたいこと、開催地、企画、思い出。少しずつ集めながら、このサイトそのものを「みんなの人生の記録」にしていく。</p><p class="small">※現在はコンセプト段階のトライアル版です。今後、アンケートや写真投稿などの機能を追加していく想定です。</p></section>
+<footer><div class="eyebrow">JINSEI PROJECT</div><h2>幼少期を共に歩んだあの頃から。</h2><p>もう一度、あの人に会いに行こう。</p></footer>
+
+<script>
+// Googleフォーム回答が入るスプレッドシートを接続します。
+const SURVEY_SHEET_ID = '1x6Au_fECmdBlWq-aWrgya_-65XZ0qnx6V46n3d77inA';
+// 空欄ならGoogleスプレッドシートの先頭シートを使用します。
+const SURVEY_SHEET_NAME = '';
+
+function normalize(v){ return String(v ?? '').trim(); }
+function findCol(headers, words){
+  return headers.findIndex(h => words.some(w => normalize(h).includes(w)));
+}
+function countContains(rows, idx, words){
+  return idx >= 0 ? rows.filter(r => words.some(w => normalize(r[idx]).includes(w))).length : 0;
+}
+function renderBars(el, counts){
+  const entries=Object.entries(counts).sort((a,b)=>b[1]-a[1]);
+  if(!entries.length){el.innerHTML='<div class="mini">データがありません。</div>';return;}
+  const max=Math.max(...entries.map(x=>x[1]));
+  el.innerHTML=entries.slice(0,8).map(([label,n])=>`<div class="barrow"><span>${label}</span><div class="bar"><i style="width:${Math.round(n/max*100)}%"></i></div><b>${n}</b></div>`).join('');
+}
+
+// fetch() は、ローカルで index.html を直接開いた場合にGoogle Sheets側の
+// CORS制限で「Failed to fetch」になることがあります。
+// そこでGoogle Visualization APIのJSONPをscriptタグ経由で読み込みます。
+function loadGvizJsonp(url, timeoutMs=12000){
+  return new Promise((resolve,reject)=>{
+    const callbackName='__jinseiProjectGviz_'+Date.now()+'_'+Math.random().toString(36).slice(2);
+    const script=document.createElement('script');
+    let finished=false;
+    const timer=setTimeout(()=>finish(new Error('タイムアウト（Google Sheetsから応答がありません）')),timeoutMs);
+
+    function cleanup(){
+      clearTimeout(timer);
+      try{ delete window[callbackName]; }catch(_){ window[callbackName]=undefined; }
+      script.remove();
+    }
+    function finish(err,data){
+      if(finished) return;
+      finished=true;
+      cleanup();
+      err ? reject(err) : resolve(data);
+    }
+    window[callbackName]=(data)=>{
+      if(!data) return finish(new Error('Google Sheetsから空の応答が返りました'));
+      if(data.status && data.status !== 'ok'){
+        const msg=data.errors?.map(e=>e.detailed_message||e.message||'不明なエラー').join(' / ') || ('status='+data.status);
+        return finish(new Error(msg));
+      }
+      finish(null,data.table ? data : null);
+    };
+    script.onerror=()=>finish(new Error('Google Sheetsへの接続に失敗しました（共有設定を確認してください）'));
+    script.src=url;
+    document.head.appendChild(script);
+  });
+}
+
+function makeGvizUrl(sheetName=''){
+  const params=new URLSearchParams();
+  params.set('tqx','out:json;responseHandler:CALLBACK');
+  params.set('headers','1');
+  if(sheetName) params.set('sheet',sheetName);
+  return `https://docs.google.com/spreadsheets/d/${SURVEY_SHEET_ID}/gviz/tq?${params.toString()}`;
+}
+
+async function loadSurveyData(){
+  const status=document.getElementById('dataStatus');
+  status.textContent='Googleスプレッドシートから回答データを読み込んでいます…';
+  const diagnostics=[];
+
+  // 先頭シート → 「フォームの回答 1」 → gid=0 の順で試します。
+  const sheetCandidates=[SURVEY_SHEET_NAME,'フォームの回答 1'];
+  let data=null;
+
+  for(const sheetName of [...new Set(sheetCandidates)]){
+    try{
+      const callbackPlaceholder='CALLBACK';
+      const base=makeGvizUrl(sheetName).replace('CALLBACK', '__PLACEHOLDER__');
+      // loadGvizJsonp側で実際のcallback名をURLに差し替えられないため、専用URL生成を行う
+      const result=await new Promise((resolve,reject)=>{
+        const callbackName='__jinseiProjectGviz_'+Date.now()+'_'+Math.random().toString(36).slice(2);
+        const script=document.createElement('script');
+        let finished=false;
+        const timer=setTimeout(()=>finish(new Error('タイムアウト（Google Sheetsから応答がありません）')),12000);
+        function cleanup(){
+          clearTimeout(timer);
+          try{ delete window[callbackName]; }catch(_){ window[callbackName]=undefined; }
+          script.remove();
+        }
+        function finish(err,value){
+          if(finished) return;
+          finished=true; cleanup(); err?reject(err):resolve(value);
+        }
+        window[callbackName]=(response)=>{
+          if(!response) return finish(new Error('空の応答'));
+          if(response.status && response.status!=='ok'){
+            const msg=response.errors?.map(e=>e.detailed_message||e.message||'不明なエラー').join(' / ') || ('status='+response.status);
+            return finish(new Error(msg));
+          }
+          if(!response.table) return finish(new Error('表データが返ってきませんでした'));
+          finish(null,response);
+        };
+        script.onerror=()=>finish(new Error('Google Sheetsへの接続に失敗しました'));
+        const params=new URLSearchParams();
+        params.set('tqx',`out:json;responseHandler:${callbackName}`);
+        params.set('headers','1');
+        if(sheetName) params.set('sheet',sheetName);
+        script.src=`https://docs.google.com/spreadsheets/d/${SURVEY_SHEET_ID}/gviz/tq?${params.toString()}`;
+        document.head.appendChild(script);
+      });
+      if(result?.table?.cols?.length){ data=result; break; }
+    }catch(err){ diagnostics.push((sheetName||'先頭シート')+': '+(err.message||err)); }
+  }
+
+  if(!data){
+    status.innerHTML=`<span class="status-warn">⚠ Googleスプレッドシートから回答データを取得できませんでした。<br>現在のエラー：${diagnostics.join(' / ')||'不明なエラー'}<br><small>スプレッドシートの「共有」→「一般的なアクセス」が「リンクを知っている全員・閲覧者」になっているか確認してください。</small></span>`;
+    return;
+  }
+
+  try{
+    const table=data.table;
+    const headers=table.cols.map(c=>normalize(c.label||c.id||''));
+    const rows=(table.rows||[]).map(r=>{
+      const cells=r.c||[];
+      return headers.map((_,i)=>normalize(cells[i]?.v ?? cells[i]?.f ?? ''));
+    });
+    const dataRows=rows.filter(r=>r.some(v=>v));
+    if(!headers.some(Boolean)) throw new Error('列見出しを取得できませんでした');
+
+    const q1=findCol(headers,['現在のお住まいはどちらですか？','現在のお住まいはどちらですか','現住所']);
+    const q2=findCol(headers,['群馬で同窓会','群馬で同窓会を開催']);
+    const q3=findCol(headers,['お子さんはいらっしゃいます','現在、お子さん']);
+    const q5=findCol(headers,['参加しやすい時間帯']);
+    const q6=findCol(headers,['30歳の同窓会に参加したい','30歳の同窓会']);
+
+    const total=dataRows.length;
+    const gunma=countContains(dataRows,q2,['ぜひ参加したい','日程によっては参加できる']);
+    const child=countContains(dataRows,q3,['いる']);
+    const want=countContains(dataRows,q6,['ぜひ参加したい','日程・場所が合えば参加したい']);
+
+    document.getElementById('answerCount').textContent=total;
+    document.getElementById('gunmaCount').textContent=total?`${gunma}人 / ${Math.round(gunma/total*100)}%`:'—';
+    document.getElementById('childCount').textContent=total?`${child}人 / ${Math.round(child/total*100)}%`:'—';
+    document.getElementById('wantCount').textContent=total?`${want}人 / ${Math.round(want/total*100)}%`:'—';
+
+    const pc={};
+    dataRows.forEach(r=>{const v=normalize(r[q1]); if(v) pc[v]=(pc[v]||0)+1});
+    renderBars(document.getElementById('prefectureBars'),pc);
+
+    const tc={};
+    dataRows.forEach(r=>{
+      normalize(r[q5]).split(/,|、/).map(x=>x.trim()).filter(Boolean)
+        .forEach(v=>tc[v]=(tc[v]||0)+1);
+    });
+    renderBars(document.getElementById('timeBars'),tc);
+
+    document.getElementById('gunmaSummary').textContent=total
+      ? `群馬開催に「ぜひ参加したい／日程によっては参加できる」と回答した人は ${gunma}人（${Math.round(gunma/total*100)}%）です。`
+      : '回答がありません。';
+
+    const missing=[];
+    if(q1<0) missing.push('現在のお住まいはどちらですか？');
+    if(q2<0) missing.push('群馬開催');
+    if(q3<0) missing.push('お子さん');
+    if(q5<0) missing.push('時間帯');
+    if(q6<0) missing.push('30歳の同窓会');
+
+    if(missing.length){
+      status.innerHTML=`<span class="status-warn">✓ スプレッドシートには ${total} 件のデータを取得できました。ただし、次の質問列を見つけられませんでした：${missing.join('、')}。<br>列名を確認してください。</span>`;
+    }else{
+      status.innerHTML=`<span class="status-ok">✓ 最新の回答データを反映しました（${total}件）。</span>`;
+    }
+  }catch(e){
+    console.error(e);
+    status.innerHTML=`<span class="status-warn">⚠ データは取得できましたが、HTML側で集計中にエラーが発生しました。<br><small>${e.message||e}</small></span>`;
+  }
+}
+
+loadSurveyData();
+</script>
+</body></html>
